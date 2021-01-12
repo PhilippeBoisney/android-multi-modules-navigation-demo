@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="24dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:text="Hello I'm 'MainActivity'"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Navigate to Activity 🤓"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnActivityResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt" />
+
+    <Button
+        android:id="@+id/btnActivityResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Navigate to Activity For Result 🤭"
+        app:layout_constraintBottom_toTopOf="@+id/btnFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnActivity" />
+
+    <Button
+        android:id="@+id/btnFragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Navigate to Fragment 🤷‍"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnActivityResult" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
